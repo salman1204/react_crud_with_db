@@ -1,10 +1,10 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             Crazy Coder
@@ -28,6 +28,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          <Link className="btn btn-outline-light" to="/users/add">Add User</Link>
         </div>
       </nav>
     </div>
