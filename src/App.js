@@ -8,6 +8,7 @@ import NotFound from "./components/NotFound/NotFound";
 import AddUser from "./components/AddUser/AddUser";
 import EditUser from "./components/EditUser/EditUser";
 import View from "./components/View/View";
+import Delete from "./components/Delete/Delete";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/users/add" component={AddUser}/>
         <Route exact path="/users/edit/:id" component={EditUser}/>
         <Route exact path="/users/:id" component={View}/>
+        <Route exact path="/users/delete/:id" component={Delete}/>
         <Route exact path="*" component={NotFound}/>
       </Switch>
     </Router>
